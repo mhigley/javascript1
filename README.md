@@ -1,5 +1,4 @@
 # JavaScript1 Geekwise Academy Documentation
----
 All embedded CSS from each page stripped out and put into an external CSS file.  
 
 Every HTML page has been beautified via the Atom package: [atom-beautify](https://atom.io/packages/atom-beautify)  
