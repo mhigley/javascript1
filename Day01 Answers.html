@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Strings.html'>Strings</a>, Previous: <a href='Day01 Assignment.html'>Day01 Assignment</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>Day01 Answers</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// Ask the user for their first name, last name, age and a place.</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">firstName</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">prompt</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_string">'What is your first name?'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">lastName</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">prompt</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_string">'What is your last name?'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">age</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">prompt</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_string">'What is your age?'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">place</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">prompt</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_string">'What is your favorite place?'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// Ask the user to confirm the place.</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">confirm</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'You said your favorite place was '</span> <span class="ace_keyword ace_operator">+</span>                        <span class="ace_identifier">place</span> <span class="ace_keyword ace_operator">+</span> <span class="ace_string">'. Is that correct?'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// Alert user's first name and last name.</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_support ace_function">alert</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">firstName</span> <span class="ace_keyword ace_operator">+</span>                        <span class="ace_string">' '</span> <span class="ace_keyword ace_operator">+</span> <span class="ace_identifier">lastName</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// Log user's age.</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">age</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Strings.html';
+            if (e.keyCode === 37) window.location.href = 'Day01 Assignment.html';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Comments & Whitespace.html'>Comments & Whitespace</a>, Previous: <a href='Convensions.html'>Convensions</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>The Console</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell text-cell"><img src="resources/F32A4ED478CC1399586D25B3F409E931.png" alt="Screen-Shot-2017-04-05-at-9.05.35-AM.png"><br></div>
+        <div class="cell markdown-cell">
+            <p>This is where we will do all of our debugging. We will use this <strong>a lot!</strong> If an error is "thrown", you'll see it here. To access the console, right click anywhere on the browser window and select <code>Inspect element</code>                then select the <code>Console</code> tab.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <p>To print a message to the console, in your script.js file, type:</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_string">'Sending a message to the console.'</span><span class="ace_paren ace_rparen">)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <p>Note the syntax. <code>console</code> is what's referred to as an <strong>object</strong> of the window. This object has a many <strong>methods</strong> for reporting information to the console.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.log()</h1>
+            <p>You've already tried this one out. It displays a simple message in the console and includes a link to the source of the message.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_string">'Sending a message to the console.'</span><span class="ace_paren ace_rparen">)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.info()</h1>
+            <p>Displays a message with an information icon and includes a link to the source of the message.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">info</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_string">'Sending an information message to the console.'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.warn()</h1>
+            <p>Displays a message with a warning icon and includes a link to the source of the message.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">warn</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_string">'Sending a warning message to the console.'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.error()</h1>
+            <p>Displays a message with an error icon and includes a link to the source of the message.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">error</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_string">'Sending an error message to the console.'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.dir()</h1>
+            <p>Displays an interactive list of an object's properties.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">dir</span><span class="ace_paren ace_lparen">([</span>
+                        <span
+                            class="ace_constant ace_numeric">4</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_language ace_boolean">false</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'Ian Malcolm'</span>
+                            <span
+                                class="ace_paren ace_rparen">])</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell"></div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Comments & Whitespace.html';
+            if (e.keyCode === 37) window.location.href = 'Convensions.html';
+        }
+    </script>
+</body>
+
+</html>

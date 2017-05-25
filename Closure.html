@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Previous: <a href='XMLHttpRequest().html'>XMLHttpRequest()</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>Closure</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">envVars</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>
+                        <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">var</span> <span class="ace_identifier">id</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">secret</span>
+                        <span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_keyword">return</span> <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_entity ace_name ace_function">set_id</span><span class="ace_punctuation ace_operator">:</span> <span class="ace_storage ace_type">function</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_variable ace_parameter">data</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span> <span class="ace_identifier">id</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_identifier">data</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_paren ace_rparen">}</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_entity ace_name ace_function">set_secret</span><span class="ace_punctuation ace_operator">:</span>
+                        <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_variable ace_parameter">data</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span> <span class="ace_identifier">secret</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_identifier">data</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_paren ace_rparen">}</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_entity ace_name ace_function">get_id</span><span class="ace_punctuation ace_operator">:</span> <span class="ace_storage ace_type">function</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span> <span class="ace_keyword">return</span> <span class="ace_identifier">id</span>
+                        <span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_paren ace_rparen">}</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_entity ace_name ace_function">get_secret</span><span class="ace_punctuation ace_operator">:</span>
+                        <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span> <span class="ace_keyword">return</span> <span class="ace_identifier">secret</span>
+                        <span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">getReq</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'/env.json'</span><span class="ace_punctuation ace_operator">,</span>                        <span class="ace_identifier">setVars</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">getReq</span><span class="ace_paren ace_lparen">(</span><span class="ace_variable ace_parameter">url</span>
+                        <span class="ace_punctuation ace_operator">, </span><span class="ace_variable ace_parameter">callback</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">var</span> <span class="ace_identifier">req</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_keyword">new</span>                        <span class="ace_identifier">XMLHttpRequest</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">open</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_string">'GET'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">url</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_entity ace_name ace_function">onload</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_keyword">if</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">req</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">readyState</span> <span class="ace_keyword ace_operator">===</span> <span class="ace_constant ace_numeric">4</span> <span class="ace_keyword ace_operator">&amp;&amp;</span>                        <span class="ace_identifier">req</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">status</span> <span class="ace_keyword ace_operator">===</span> <span class="ace_constant ace_numeric">4</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span> <span class="ace_identifier">callback</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_variable ace_language">JSON</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">parse</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">req</span>
+                        <span
+                            class="ace_punctuation ace_operator">.</span>
+                            <span class="ace_support ace_constant">responseText</span><span class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_paren ace_rparen">}</span><span class="ace_keyword">else</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span>
+                        <span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'error'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">req</span>
+                        <span
+                            class="ace_punctuation ace_operator">.</span>
+                            <span class="ace_support ace_constant">statusText</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">send</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_constant ace_language">null</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">myVars</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">envVars</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>
+                        <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">var</span> <span class="ace_identifier">id</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">secret</span>
+                        <span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_keyword">return</span> <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_entity ace_name ace_function">set_id</span><span class="ace_punctuation ace_operator">:</span> <span class="ace_storage ace_type">function</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_variable ace_parameter">data</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span> <span class="ace_identifier">id</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_identifier">data</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_paren ace_rparen">}</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_entity ace_name ace_function">set_secret</span><span class="ace_punctuation ace_operator">:</span>
+                        <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_variable ace_parameter">data</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span> <span class="ace_identifier">secret</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_identifier">data</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_paren ace_rparen">}</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_entity ace_name ace_function">get_id</span><span class="ace_punctuation ace_operator">:</span> <span class="ace_storage ace_type">function</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span> <span class="ace_keyword">return</span> <span class="ace_identifier">id</span>
+                        <span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_paren ace_rparen">}</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_entity ace_name ace_function">get_secret</span><span class="ace_punctuation ace_operator">:</span>
+                        <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span> <span class="ace_keyword">return</span> <span class="ace_identifier">secret</span>
+                        <span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">setVars</span><span class="ace_paren ace_lparen">(</span><span class="ace_variable ace_parameter">obj</span>
+                        <span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">myVars</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">envVars</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">myVars</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">set_id</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_identifier">obj</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">id</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">myVars</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">set_secret</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_identifier">obj</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">secret</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 37) window.location.href = 'XMLHttpRequest().html';
+        }
+    </script>
+</body>
+
+</html>

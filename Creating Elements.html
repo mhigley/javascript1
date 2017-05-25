@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Day08 Assignment.html'>Day08 Assignment</a>, Previous: <a href='This.html'>This</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>Creating Elements</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell markdown-cell">
+            <h1>.createElement()</h1>
+            <p>The createElement() method creates an Element Node with the specified name.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">body</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">body</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">body</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">main</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'main'</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">header</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span><span class="ace_punctuation ace_operator">.</span>
+                        <span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'header'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">article</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span><span class="ace_punctuation ace_operator">.</span>
+                        <span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'article'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">aside</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span><span class="ace_punctuation ace_operator">.</span>
+                        <span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'aside'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">footer</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span><span class="ace_punctuation ace_operator">.</span>
+                        <span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'footer'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">main</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">append</span><span class="ace_paren ace_lparen">({</span>
+                        <span class="ace_identifier">header</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">article</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">aside</span>
+                        <span
+                            class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">footer</span><span class="ace_paren ace_rparen">})</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">body</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">append</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_identifier">main</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">main</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">className</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_string">'container'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.appendChild</h1>
+            <p>The appendChild() method appends a node as the last child of a node.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">body</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">body</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">main</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'main'</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">header</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span><span class="ace_punctuation ace_operator">.</span>
+                        <span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'header'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">article</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span><span class="ace_punctuation ace_operator">.</span>
+                        <span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'article'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">aside</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span><span class="ace_punctuation ace_operator">.</span>
+                        <span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'aside'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">footer</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span><span class="ace_punctuation ace_operator">.</span>
+                        <span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'footer'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">main</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">appendChild</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_identifier">header</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">main</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">appendChild</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_identifier">article</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">main</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">appendChild</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_identifier">aside</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">main</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">appendChild</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_identifier">footer</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">main</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">className</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_string">'container'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">body</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">appendChild</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_identifier">main</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.append()</h1>
+            <p>The appendChild() method appends a set of nodes after last child of a ParentNode.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">body</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">body</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">main</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'main'</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">header</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span><span class="ace_punctuation ace_operator">.</span>
+                        <span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'header'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">article</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span><span class="ace_punctuation ace_operator">.</span>
+                        <span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'article'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">aside</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span><span class="ace_punctuation ace_operator">.</span>
+                        <span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'aside'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">footer</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span><span class="ace_punctuation ace_operator">.</span>
+                        <span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'footer'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">main</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">append</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_identifier">header</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">article</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">aside</span>
+                        <span
+                            class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">footer</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">main</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">className</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_string">'container'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">body</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">append</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_identifier">main</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.insertBefore()</h1>
+            <p>The insertBefore() method inserts a node as a child, right before an existing child, which you specify.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment ace_xml">&lt;!-- HTML --&gt;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_tag-name ace_xml">div</span><span class="ace_text ace_tag-whitespace ace_xml"> </span>
+                        <span class="ace_entity ace_other ace_attribute-name ace_xml">id</span><span class="ace_keyword ace_operator ace_attribute-equals ace_xml">=</span><span class="ace_string ace_attribute-value ace_xml">"parent"</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_text ace_xml">    </span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_tag-name ace_xml">p</span>
+                        <span class="ace_text ace_tag-whitespace ace_xml"> </span><span class="ace_entity ace_other ace_attribute-name ace_xml">id</span><span class="ace_keyword ace_operator ace_attribute-equals ace_xml">=</span><span class="ace_string ace_attribute-value ace_xml">"child"</span>
+                        <span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span><span class="ace_text ace_xml">Lorem ipsum dolor sit amet.</span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span>
+                        <span
+                            class="ace_meta ace_tag ace_tag-name ace_xml">p</span>
+                            <span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span><span class="ace_meta ace_tag ace_tag-name ace_xml">div</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">h1</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"h1"</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// Get a reference to the element, before we want to insert the element</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">para</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">getElementById</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"child"</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// Get a reference to the parent element</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">parent</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">para</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">parentNode</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// Insert the new element into the DOM before sp2</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">parent</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">insertBefore</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">h1</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">para</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>Adding Attributes</h1>
+            <p>Adding attibutes and their values are as easy as using dot notation.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>.id</h4>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">p</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'p'</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">p</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">id</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_string">'paragraphId'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">p</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">innerHTML</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_string">'This is my &lt;strong&gt;amazing&lt;/strong&gt; paragraph'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">parent</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">appendChild</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_identifier">p</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>.className</h4>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">h1</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'h1'</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">h1</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">className</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_string">'headingClass'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">h1</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">textContent</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_string">'The headline to an article'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">parent</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">appendChild</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_identifier">h1</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>.alt</h4>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">img</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">createElement</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'img'</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">img</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">setAttribute</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_string">'alt'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'Picture of a cute, cuddly raptor.'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">img</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">src</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_string">'http://vignette3.wikia.nocookie.net/dino/images/5/5a/Jurassic_Park_Baby_Raptor_Hatchling_1_1_Replica/revision/latest?cb=20151114025025'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">parent</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">appendChild</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_identifier">img</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Day08 Assignment.html';
+            if (e.keyCode === 37) window.location.href = 'This.html';
+        }
+    </script>
+</body>
+
+</html>

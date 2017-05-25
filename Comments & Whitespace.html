@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Alert, Confirm & Prompt.html'>Alert, Confirm & Prompt</a>, Previous: <a href='The Console.html'>The Console</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>Comments & Whitespace</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell markdown-cell">
+            <h1>Comments</h1>
+        </div>
+        <div class="cell markdown-cell">
+            <p>Just as HTML (<code>&lt;!-- comment --&gt;</code>) and CSS (<code>/* comment */</code>) have their individual ways of leaving comments and notes ignored by the browser, or used for disabling large blocks of content, so does JavaScript:</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// Single line comment</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">/*</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">Multi</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">line</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">comment</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">*/</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>Whitespace</h1>
+            <p>Unlike most other programming languages, JavaScript is very loose in its requirements leaving much leeway for the developer to write their code the way they want.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>
+                        <span class="ace_indent-guide"> </span> <span class="ace_identifier">freedom</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_keyword ace_operator">=</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span> <span class="ace_string">"You \</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_string">    can                     do \</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_string">    a   lot     of                          what \</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_string">    you want"</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>
+                        <span class="ace_indent-guide"> </span> <span class="ace_storage ace_type">var</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_identifier">options</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>
+                        <span class="ace_indent-guide"> </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span> <span class="ace_keyword ace_operator">=</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_string">"You "</span><span class="ace_keyword ace_operator">+</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_string">"can "</span><span class="ace_keyword ace_operator">+</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_string">"do "</span><span class="ace_keyword ace_operator">+</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_string">"a "</span><span class="ace_keyword ace_operator">+</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_string">"lot "</span><span class="ace_keyword ace_operator">+</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_string">"of "</span><span class="ace_keyword ace_operator">+</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_string">"what "</span><span class="ace_keyword ace_operator">+</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_string">"you                        want"</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <p>Although JavaScript gives you the freedom to write your code like this... please don't. I don't want to have to revoke your computer privileges. :)</p>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Alert, Confirm & Prompt.html';
+            if (e.keyCode === 37) window.location.href = 'The Console.html';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Arrays.html'>Arrays</a>, Previous: <a href='Day02 Assignment.html'>Day02 Assignment</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>Day02 Answers</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// Create a random number generator the logs numbers from 1 to 100.</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">randNum1</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">Math</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">ceil</span><span class="ace_paren ace_lparen">(</span><span class="ace_variable ace_language">Math</span><span class="ace_punctuation ace_operator">.</span>
+                        <span
+                            class="ace_support ace_function">random</span>
+                            <span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span> <span class="ace_keyword ace_operator">*</span> <span class="ace_constant ace_numeric">100</span><span class="ace_paren ace_rparen">)</span>
+                            <span
+                                class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// Create another random number generator the logs numbers from 0 to 100.</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">randNum2</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">Math</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">floor</span><span class="ace_paren ace_lparen">(</span><span class="ace_variable ace_language">Math</span><span class="ace_punctuation ace_operator">.</span>
+                        <span
+                            class="ace_support ace_function">random</span>
+                            <span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span> <span class="ace_keyword ace_operator">*</span> <span class="ace_constant ace_numeric">100</span><span class="ace_paren ace_rparen">)</span>
+                            <span
+                                class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Arrays.html';
+            if (e.keyCode === 37) window.location.href = 'Day02 Assignment.html';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Day02 Assignment.html'>Day02 Assignment</a>, Previous: <a href='Math.html'>Math</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>Date</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell markdown-cell">
+            <p>var toDay = new Date();<br> var locale = 'en-us';<br> var fullMonth = toDay.toLocaleString(locale , {month : 'long'});</p>
+            <pre><code>getDate()
+getDay() - zero based
+getFullYear()
+getMonth() - zero based</code></pre>
+        </div>
+        <div class="cell markdown-cell">
+            <h1>New Date</h1>
+        </div>
+        <div class="cell markdown-cell">
+            <h1>GetDate</h1>
+        </div>
+        <div class="cell markdown-cell">
+            <h1>GetDay</h1>
+        </div>
+        <div class="cell markdown-cell">
+            <h1>GetFullYear</h1>
+        </div>
+        <div class="cell markdown-cell">
+            <h1>GetMonth</h1>
+        </div>
+        <div class="cell markdown-cell">
+            <h1>ToLocaleString</h1>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Day02 Assignment.html';
+            if (e.keyCode === 37) window.location.href = 'Math.html';
+        }
+    </script>
+</body>
+
+</html>

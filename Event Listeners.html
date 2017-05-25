@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Day06 Assignment.html'>Day06 Assignment</a>, Previous: <a href='Targeting DOM Elements.html'>Targeting DOM Elements</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>Event Listeners</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell markdown-cell">
+            <h1>Short List of Events</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Clicking</th>
+                        <th>Mousing</th>
+                        <th>Viewing</th>
+                        <th>Keying</th>
+                        <th>Forming</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>click</td>
+                        <td>mouseenter</td>
+                        <td>scroll</td>
+                        <td>keypress</td>
+                        <td>reset</td>
+                    </tr>
+                    <tr>
+                        <td>mousedown</td>
+                        <td>mouseleave</td>
+                        <td>resize</td>
+                        <td>keydown</td>
+                        <td>submit</td>
+                    </tr>
+                    <tr>
+                        <td>mouseup</td>
+                        <td>mouseover</td>
+                        <td></td>
+                        <td>keyup</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>dblclick</td>
+                        <td>mouseout</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>contextmenu</td>
+                        <td>wheel</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>example: target.addEventListener(type, function);
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>click</h1>
+            <p>Event occurs on a complete action of left clicking and releasing.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">btn</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span>
+                        <span
+                            class="ace_punctuation ace_operator">.</span><span class="ace_identifier">querySelector</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'#btn'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">btn</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">addEventListener</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_string">'click'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">btn</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">style</span><span class="ace_punctuation ace_operator">.</span>
+                        <span
+                            class="ace_support ace_constant">backgroundColor</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'red'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">})</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>mousedown</h1>
+            <p>Event occurs at the moment the left click is pressed.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">btn</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">addEventListener</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_string">'mousedown'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">btn</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">style</span><span class="ace_punctuation ace_operator">.</span>
+                        <span
+                            class="ace_support ace_constant">backgroundColor</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'green'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">})</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>mouseup</h1>
+            <p>Event occurs at the moment the left click is released.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">btn</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">addEventListener</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_string">'mouseup'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">btn</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">style</span><span class="ace_punctuation ace_operator">.</span>
+                        <span
+                            class="ace_support ace_constant">backgroundColor</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'blue'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">})</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>mousemove</h1>
+            <p>Event occurs anytime the mouse is moved.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_variable ace_language">window</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">addEventListener</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_string">'mousemove'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">e</span><span class="ace_paren ace_rparen">)</span>
+                            <span
+                                class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">e</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">})</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>mouseenter</h1>
+            <p>Event occurs when the cursor enters the targeted element.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">btn</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span>
+                        <span
+                            class="ace_punctuation ace_operator">.</span><span class="ace_identifier">querySelector</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'#btn'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">btn</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">addEventListener</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_string">'mouseenter'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">btn</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">style</span><span class="ace_punctuation ace_operator">.</span>
+                        <span
+                            class="ace_support ace_constant">fontSize</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'2em'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">btn</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">style</span><span class="ace_punctuation ace_operator">.</span>
+                        <span
+                            class="ace_identifier">color</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'white'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">btn</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">style</span><span class="ace_punctuation ace_operator">.</span>
+                        <span
+                            class="ace_support ace_constant">backgroundColor</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'black'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">})</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>mouseleave</h1>
+            <p>Event occurs when the cursor leaves the targeted element.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">btn</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">addEventListener</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_string">'mouseleave'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">btn</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">style</span><span class="ace_punctuation ace_operator">.</span>
+                        <span
+                            class="ace_support ace_constant">fontSize</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'1em'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">btn</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">style</span><span class="ace_punctuation ace_operator">.</span>
+                        <span
+                            class="ace_identifier">color</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'black'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">btn</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">style</span><span class="ace_punctuation ace_operator">.</span>
+                        <span
+                            class="ace_support ace_constant">backgroundColor</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'gray'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">})</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>scroll</h1>
+            <p>Event occurs when the user scrolls the page, either up or down. Does not fire automatically when the scroll wheel is spun. Only if the page scrolls.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_variable ace_language">window</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">addEventListener</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_string">'scroll'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">e</span><span class="ace_paren ace_rparen">)</span>
+                            <span
+                                class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">e</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">})</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>keypress</h1>
+            <p>Event occurs on the complete action pressing and releasing any key.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_variable ace_language">window</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">addEventListener</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_string">'keypress'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">e</span><span class="ace_paren ace_rparen">)</span>
+                            <span
+                                class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">e</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">})</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <blockquote>
+                <p>Note: Chrome and older versions of IE do not regiser arrow key presses with the <code>keypress</code> event. You'll have to use <code>keydown</code> for those browsers.</p>
+            </blockquote>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>keydown</h1>
+            <p>Event occurs at the moment any key is pressed.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_variable ace_language">window</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">addEventListener</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_string">'keydown'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">e</span><span class="ace_paren ace_rparen">)</span>
+                            <span
+                                class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">e</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">})</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>keyup</h1>
+            <p>Event occurs at the moment any key is released.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_variable ace_language">window</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">addEventListener</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_string">'keydown'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">e</span><span class="ace_paren ace_rparen">)</span>
+                            <span
+                                class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">e</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">})</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Day06 Assignment.html';
+            if (e.keyCode === 37) window.location.href = 'Targeting DOM Elements.html';
+        }
+    </script>
+</body>
+
+</html>

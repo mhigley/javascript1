@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Variable Hoisting.html'>Variable Hoisting</a>, Previous: <a href='Ternary Operators & Switch Statements.html'>Ternary Operators & Switch Statements</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>Var, Let & Const</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell markdown-cell">
+            <p>JavaScript variables are containers for storing data values.</p>
+            <p>However, as JavaScript has matured, new options have been added for storing your data. Each of these options offers slightly different advantages and disadvantages.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <h1>var</h1>
+            <p>The <code>var</code> keyword has function scope, meaning (depending on where it is created) it is accessible everywhere. Good? Yeah.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">coffee</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Dutch Bros'</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">myCoffee</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">coffee</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Dutch Bros</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">myCoffee</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">coffee</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Dutch Bros</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <blockquote>
+                <p>Note: Here we created a variable outside of all functions making it a "global" variable.</p>
+            </blockquote>
+        </div>
+        <div class="cell markdown-cell">
+            <p>It can be instantiated and instantiated again without error, and changed at any time into any type of data.<br> Good? Meh.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">coffee</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Dutch Bros'</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">myCoffee</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">var</span> <span class="ace_identifier">coffee</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Starbucks'</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">coffee</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Starbucks</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">myCoffee</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <blockquote>
+                <p>Note: Here we created a variable globally, AND one inside of myFunction which is only accessible INSIDE of myFunction.</p>
+            </blockquote>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">coffee</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Dutch Bros'</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">myCoffee</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">var</span> <span class="ace_identifier">coffee</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Starbucks'</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">coffee</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Starbucks</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">coffee</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Peets'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">coffee</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Peets</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">myCoffee</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">coffee</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Dutch Bros</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <blockquote>
+                <p>Note: In this example the "scoped" variable we created inside of myFunction and logged it. Is modified</p>
+            </blockquote>
+        </div>
+        <div class="cell markdown-cell">
+            <p>It can even be instantiated without the keyword.<br> Good? Nope.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">myCoffee</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">coffee</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Dunkin'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">coffee</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Dunkin</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">myCoffee</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">coffee</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Dunkin</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <p>Because variables have function scope, instances such as the example below can cause a problem if you're not careful.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">for</span><span class="ace_paren ace_lparen">(</span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">i</span>
+                        <span
+                            class="ace_keyword ace_operator">=</span> <span class="ace_constant ace_numeric">0</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_identifier">i</span> <span class="ace_keyword ace_operator">&lt;</span> <span class="ace_constant ace_numeric">5</span>
+                            <span
+                                class="ace_punctuation ace_operator">;</span> <span class="ace_identifier">i</span><span class="ace_keyword ace_operator">++</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">i</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// 0 1 2 3 4</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">i</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// 5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h1>let</h1>
+            <p>The <code>let</code> statement declares a block scope local variable, optionally initializing it to a value..</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">for</span><span class="ace_paren ace_lparen">(</span><span class="ace_storage ace_type">let</span> <span class="ace_identifier">i</span>
+                        <span
+                            class="ace_keyword ace_operator">=</span> <span class="ace_constant ace_numeric">0</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_identifier">i</span> <span class="ace_keyword ace_operator">&lt;</span> <span class="ace_constant ace_numeric">5</span>
+                            <span
+                                class="ace_punctuation ace_operator">;</span> <span class="ace_identifier">i</span><span class="ace_keyword ace_operator">++</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">i</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// 0 1 2 3 4</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">i</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// ReferenceError: i is not defined</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">let</span> <span class="ace_identifier">fName</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">fName</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Undefined</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">fName</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Matt'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">fName</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Matt</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">fName</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Matthew'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">fName</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Matthew</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell text-cell">`let` works very similarly to `var`, however, because it is block scope, values don’t bleed out from the code block. You also, can not redeclare a variable as you can variables.</div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">let</span> <span class="ace_identifier">fName</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Matt'</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">fName</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Matt</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">let</span> <span class="ace_identifier">fName</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Matthew'</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">fName</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// SyntaxError: redeclaration of let fName</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h1>const</h1>
+            <p>The strictest of all the statements. It declares a read-only named constant. It shares the same scope as <code>let</code>, however it must me initialized when the const is declared.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">const</span> <span class="ace_identifier">fName</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">fName</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// SyntaxError: missing = in const declaration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Variable Hoisting.html';
+            if (e.keyCode === 37) window.location.href = 'Ternary Operators & Switch Statements.html';
+        }
+    </script>
+</body>
+
+</html>

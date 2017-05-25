@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Forms.html'>Forms</a>, Previous: <a href='Day06 Assignment.html'>Day06 Assignment</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>DOM Manipulation</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell markdown-cell">
+            <h1>.textContent</h1>
+            <p>The textContent property returns or sets the text from the selected element.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment ace_xml">&lt;!-- HTML --&gt;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_tag-name ace_xml">div</span><span class="ace_text ace_tag-whitespace ace_xml"> </span>
+                        <span
+                            class="ace_entity ace_other ace_attribute-name ace_xml">id</span><span class="ace_keyword ace_operator ace_attribute-equals ace_xml">=</span><span class="ace_string ace_attribute-value ace_xml">"set"</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                            <span
+                                class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span><span class="ace_meta ace_tag ace_tag-name ace_xml">div</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_tag-name ace_xml">div</span><span class="ace_text ace_tag-whitespace ace_xml"> </span>
+                        <span
+                            class="ace_entity ace_other ace_attribute-name ace_xml">id</span><span class="ace_keyword ace_operator ace_attribute-equals ace_xml">=</span><span class="ace_string ace_attribute-value ace_xml">"get"</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                            <span
+                                class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_tag-name ace_xml">p</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span><span class="ace_text ace_xml">This is a </span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span>
+                                <span
+                                    class="ace_meta ace_tag ace_tag-name ace_xml">strong</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span><span class="ace_text ace_xml">different</span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span>
+                                    <span
+                                        class="ace_meta ace_tag ace_tag-name ace_xml">strong</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span><span class="ace_text ace_xml"> line of text.</span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span>
+                                        <span
+                                            class="ace_meta ace_tag ace_tag-name ace_xml">p</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span><span class="ace_meta ace_tag ace_tag-name ace_xml">div</span>
+                                            <span
+                                                class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Setting content</h4>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">setDiv</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span>
+                        <span
+                            class="ace_punctuation ace_operator">.</span><span class="ace_identifier">querySelector</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'div#set'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">setDiv</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">textContent</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_string">'&lt;p&gt;Here is a &lt;strong&gt;line&lt;/strong&gt; of text&lt;/p&gt;'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Getting content</h4>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">getDiv</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span>
+                        <span
+                            class="ace_punctuation ace_operator">.</span><span class="ace_identifier">querySelector</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'div#get'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">getDiv</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">textContent</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>                            <span class="ace_comment">//This is a different line of text.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.innerHTML</h1>
+            <p>The innerHTML property sets or returns the HTML content (inner HTML) of an element.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment ace_xml">&lt;!-- HTML --&gt;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_tag-name ace_xml">div</span><span class="ace_text ace_tag-whitespace ace_xml"> </span>
+                        <span
+                            class="ace_entity ace_other ace_attribute-name ace_xml">id</span><span class="ace_keyword ace_operator ace_attribute-equals ace_xml">=</span><span class="ace_string ace_attribute-value ace_xml">"set"</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                            <span
+                                class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span><span class="ace_meta ace_tag ace_tag-name ace_xml">div</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_tag-name ace_xml">div</span><span class="ace_text ace_tag-whitespace ace_xml"> </span>
+                        <span
+                            class="ace_entity ace_other ace_attribute-name ace_xml">id</span><span class="ace_keyword ace_operator ace_attribute-equals ace_xml">=</span><span class="ace_string ace_attribute-value ace_xml">"get"</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                            <span
+                                class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_tag-name ace_xml">p</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span><span class="ace_text ace_xml">This is a </span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span>
+                                <span
+                                    class="ace_meta ace_tag ace_tag-name ace_xml">strong</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span><span class="ace_text ace_xml">different</span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span>
+                                    <span
+                                        class="ace_meta ace_tag ace_tag-name ace_xml">strong</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span><span class="ace_text ace_xml"> line of text.</span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span>
+                                        <span
+                                            class="ace_meta ace_tag ace_tag-name ace_xml">p</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span><span class="ace_meta ace_tag ace_tag-name ace_xml">div</span>
+                                            <span
+                                                class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Setting content</h4>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">setDiv</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span>
+                        <span
+                            class="ace_punctuation ace_operator">.</span><span class="ace_identifier">querySelector</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'div#set'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">setDiv</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">innerHTML</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_string">'&lt;p&gt;Here is a &lt;strong&gt;line&lt;/strong&gt; of text&lt;/p&gt;'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Getting content</h4>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">getDiv</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable ace_language">document</span>
+                        <span
+                            class="ace_punctuation ace_operator">.</span><span class="ace_identifier">querySelector</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'div#get'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">getDiv</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">innerHTML</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>                            <span class="ace_comment">//&lt;p&gt;This is a &lt;strong&gt;different&lt;/strong&gt; line of text.&lt;/p&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>document.write()</h1>
+            <p>This method is mostly used for testing purposes. The write() method writes HTML expressions or JavaScript code to a document.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <blockquote>
+                <p>Tip: If document.write() is used after an HTML document is fully loaded, it will delete all existing HTML.</p>
+            </blockquote>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment ace_xml">&lt;!-- HTML --&gt;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_tag-name ace_xml">h1</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                        <span
+                            class="ace_text ace_xml">Headline</span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span><span class="ace_meta ace_tag ace_tag-name ace_xml">h1</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_tag-name ace_xml">p</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                        <span
+                            class="ace_text ace_xml">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores a, nobis quia mollitia. Natus, qui cupiditate eligendi recusandae in, libero!</span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span>
+                            <span
+                                class="ace_meta ace_tag ace_tag-name ace_xml">p</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_form ace_tag-name ace_xml">button</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                        <span
+                            class="ace_text ace_xml">Click Here!</span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span><span class="ace_meta ace_tag ace_form ace_tag-name ace_xml">button</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">/* JavaScript */</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">writeMessage</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'&lt;h1&gt;Info&lt;/h1&gt;&lt;p&gt;This content will be loaded onto the page&lt;/p&gt;'</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_variable ace_language">document</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">write</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">writeMessage</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">buttonMessage</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'&lt;h1&gt;Note&lt;/h1&gt;&lt;p&gt;All HTML has been deleted.&lt;/p&gt;'</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_variable ace_language">document</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">querySelector</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_string">'button'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">addEventListener</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'click'</span>
+                            <span
+                                class="ace_punctuation ace_operator">,</span> <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable ace_language">document</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">write</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">buttonMessage</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">})</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Forms.html';
+            if (e.keyCode === 37) window.location.href = 'Day06 Assignment.html';
+        }
+    </script>
+</body>
+
+</html>

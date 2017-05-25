@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='ES5, ES6 and beyond.html'>ES5, ES6 and beyond</a>, Previous: <a href='Git.html'>Git</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>JavaScript — Introduction</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell text-cell"><img src="resources/928A2C8248A705DAABC0DB374EA0A5F2.png" alt="140404_POL_MOzillaCEO.jpg.CROP.original-original.png"><br></div>
+        <div class="cell markdown-cell">
+            <p>Created in 1995 by Brendan Eich of Netscape in 10 days.<br> Started out named Mocha, changed to LiveScript and again to JavaScript.<br> The rendering technology is embedded into every web browser.<br> Developed so programmers could make engaging
+                and dynamic websites that run in the browser, not on the server.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>So how does it work?</h1>
+            <p>There are three ways to add JavaScript to your webpages.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Inline</h4>
+            <p>Generally disuaded technique, however appropriate under certain circumstances</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_tag-name ace_xml">button</span><span class="ace_text ace_tag-whitespace ace_xml"> </span><span class="ace_entity ace_other ace_attribute-name ace_xml">type</span><span class="ace_keyword ace_operator ace_attribute-equals ace_xml">=</span><span class="ace_string ace_attribute-value ace_xml">"button"</span><span class="ace_text ace_tag-whitespace ace_xml"> </span><span class="ace_entity ace_other ace_attribute-name ace_xml">onclick</span><span class="ace_keyword ace_operator ace_attribute-equals ace_xml">=</span><span class="ace_string ace_attribute-value ace_xml">"alert('You created a popup window')"</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span><span class="ace_string">Click Here</span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span><span class="ace_meta ace_tag ace_tag-name ace_xml">button</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Internal</h4>
+            <p>A better solution than inline. Perfect for small scripts that only need to run on a specific page. Blocks of JavaScript can be added throughout your pages in both the <code>&lt;head&gt;</code> and the <code>&lt;body&gt;</code>.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_tag-name ace_xml">script</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_string">    document.innerHTML = 'Printing some text to the screen';</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span><span class="ace_meta ace_tag ace_tag-name ace_xml">script</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <blockquote>
+                <p>Tip: Be careful though... JavaScript will run as soon as the browser comes across it rendering the page!!</p>
+            </blockquote>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>External</h4>
+            <p>Ideally, the best solution. Complex scripts get created in a separate file. The <code>&lt;script&gt;</code> can be included in either the <code>&lt;head&gt;</code> or the <code>&lt;body&gt;</code>, but it is generally recommended to be added
+                <strong>before</strong> the closing <code>&lt;body&gt;</code> tag.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_keyword ace_operator">...</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_tag-name ace_xml">script</span><span class="ace_text ace_tag-whitespace ace_xml"> </span><span class="ace_entity ace_other ace_attribute-name ace_xml">src</span><span class="ace_keyword ace_operator ace_attribute-equals ace_xml">=</span><span class="ace_string ace_attribute-value ace_xml">"js/script.js"</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span><span class="ace_meta ace_tag ace_tag-name ace_xml">script</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span><span class="ace_meta ace_tag ace_tag-name ace_xml">body</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span><span class="ace_meta ace_tag ace_tag-name ace_xml">html</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell"></div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'ES5, ES6 and beyond.html';
+            if (e.keyCode === 37) window.location.href = 'Git.html';
+        }
+    </script>
+</body>
+
+</html>

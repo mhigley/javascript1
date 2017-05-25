@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Object Constructor.html'>Object Constructor</a>, Previous: <a href='Day08 Assignment.html'>Day08 Assignment</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>Objects</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell markdown-cell">
+            <h1>Object</h1>
+            <p>Virtually everything in JavaScript is an Object. An Object can hold many different things, but it starts with a variable. Just like a variable is a container, an object is a variable as well except it can hold many different values. Each item
+                that's saved in an object is known as a <strong>name:value</strong> pair.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">myCar</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">make</span><span class="ace_punctuation ace_operator">:</span> <span class="ace_string">"jeep"</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">model</span><span class="ace_punctuation ace_operator">:</span> <span class="ace_string">"wrangler"</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">color</span><span class="ace_punctuation ace_operator">:</span> <span class="ace_string">"black"</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <p>In a more complex example, <em>methods</em> are added. Even a car has functionality... start, stop, turn, etc...</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">myCar</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">make</span><span class="ace_punctuation ace_operator">:</span> <span class="ace_string">"jeep"</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">model</span><span class="ace_punctuation ace_operator">:</span> <span class="ace_string">"wrangler"</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">color</span><span class="ace_punctuation ace_operator">:</span> <span class="ace_string">"black"</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_entity ace_name ace_function">start</span><span class="ace_punctuation ace_operator">:</span> <span class="ace_storage ace_type">function</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_comment">// code</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_entity ace_name ace_function">stop</span><span class="ace_punctuation ace_operator">:</span> <span class="ace_storage ace_type">function</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_comment">// code</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <p>If you wanted to change any of the values:</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">myCar</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">color</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_string">'white'</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <p>This is the typical use case for an object... and also the typical syntax for every other object that you interact with.</p>
+            <p>The example above however is limited in many situations. They only create a single object.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <h1>Object Constructor</h1>
+            <p>The object constructor gives us a skeleton of an object that can be used over and over. Each usage creates a new instance of the object and</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">Person</span><span class="ace_paren ace_lparen">(</span><span class="ace_variable ace_parameter">first</span>
+                        <span
+                            class="ace_punctuation ace_operator">, </span><span class="ace_variable ace_parameter">last</span><span class="ace_punctuation ace_operator">, </span><span class="ace_variable ace_parameter">age</span><span class="ace_punctuation ace_operator">, </span><span class="ace_variable ace_parameter">eye</span>
+                            <span
+                                class="ace_paren ace_rparen">)</span> <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable ace_language">this</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">firstname</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_identifier">first</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable ace_language">this</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">lastname</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_identifier">last</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable ace_language">this</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">age</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_identifier">age</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable ace_language">this</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">eyes</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_identifier">eye</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">myFather</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_keyword">new</span>                        <span class="ace_identifier">Person</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"John"</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">"Doe"</span><span class="ace_punctuation ace_operator">,</span>                        <span class="ace_constant ace_numeric">50</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">"blue"</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">myMother</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_keyword">new</span>                        <span class="ace_identifier">Person</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"Sally"</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">"Rally"</span><span class="ace_punctuation ace_operator">,</span>                        <span class="ace_constant ace_numeric">48</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">"green"</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <p>Object constructors can add the use of <strong>methods</strong> just as in the basic object as well.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">Person</span><span class="ace_paren ace_lparen">(</span><span class="ace_variable ace_parameter">first</span>
+                        <span
+                            class="ace_punctuation ace_operator">, </span><span class="ace_variable ace_parameter">last</span><span class="ace_punctuation ace_operator">, </span><span class="ace_variable ace_parameter">age</span><span class="ace_punctuation ace_operator">, </span><span class="ace_variable ace_parameter">eye</span>
+                            <span
+                                class="ace_paren ace_rparen">)</span> <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable ace_language">this</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">firstname</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_identifier">first</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable ace_language">this</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">lastname</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_identifier">last</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable ace_language">this</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">age</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_identifier">age</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable ace_language">this</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">eyes</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_identifier">eye</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">this</span><span class="ace_punctuation ace_operator">.</span><span class="ace_entity ace_name ace_function">talk</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_string">'hello '</span> <span class="ace_keyword ace_operator">+</span> <span class="ace_variable ace_language">this</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">firstname</span>
+                            <span
+                                class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">myFather</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_keyword">new</span>                        <span class="ace_identifier">Person</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"John"</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">"Doe"</span><span class="ace_punctuation ace_operator">,</span>                        <span class="ace_constant ace_numeric">50</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">"blue"</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">myMother</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_keyword">new</span>                        <span class="ace_identifier">Person</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"Sally"</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">"Rally"</span><span class="ace_punctuation ace_operator">,</span>                        <span class="ace_constant ace_numeric">48</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">"green"</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Object Constructor.html';
+            if (e.keyCode === 37) window.location.href = 'Day08 Assignment.html';
+        }
+    </script>
+</body>
+
+</html>

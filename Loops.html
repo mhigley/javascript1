@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Comparison & Logical Operators.html'>Comparison & Logical Operators</a>, Previous: <a href='Arrays.html'>Arrays</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>Loops</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell markdown-cell">
+            <p>The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <p>Loops are handy, if you want to run the same code over and over again, each time with a different value.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>for loop</h1>
+            <p>A long time classic. It starts with the <strong>for</strong> keyword, then inside the parenthesis has three parameters: an initialization, a condition and a final-expression.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">for</span><span class="ace_paren ace_lparen">(</span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">i</span>
+                        <span
+                            class="ace_keyword ace_operator">=</span> <span class="ace_constant ace_numeric">0</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_identifier">i</span> <span class="ace_keyword ace_operator">&lt;</span> <span class="ace_constant ace_numeric">5</span>
+                            <span
+                                class="ace_punctuation ace_operator">;</span> <span class="ace_identifier">i</span><span class="ace_keyword ace_operator">++</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">i</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>while loop</h1>
+            <p>The while statement creates a loop that executes a specified statement as long as the test condition evaluates to true.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">i</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_constant ace_numeric">0</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">while</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">i</span> <span class="ace_keyword ace_operator">&lt;</span>                        <span class="ace_constant ace_numeric">10</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">i</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">i</span><span class="ace_keyword ace_operator">++</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <blockquote>
+                <p>Tip: Watch Out! Don't forget to add the incrementor inside of your while loop, or else you'll create an infinite loop and crash your browser!!</p>
+            </blockquote>
+        </div>
+        <div class="cell markdown-cell">
+            <p>If you feel as if the <strong>for</strong> loop and the <strong>while</strong> loop are very similar... you're right! They are. In the <strong>while</strong> loop, you've just removed the initialization and final-expression to outside the
+                loop and after the code block respectively. They are essentially identical.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>do... while loop</h1>
+            <p>The do... while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true. It will <strong>always</strong> run at
+                least once!</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">i</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_constant ace_numeric">0</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">do</span> <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">i</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">i</span><span class="ace_keyword ace_operator">++</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">while</span> <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">i</span> <span class="ace_keyword ace_operator">&lt;</span>                        <span class="ace_constant ace_numeric">10</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.forEach() loop</h1>
+            <p>The array specific loop. The forEach() method calls a provided function once for each element in an array, in order.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">jeeps</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_paren ace_lparen">[</span>
+                        <span
+                            class="ace_string">'wrangler'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'cherokee'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'grand cherokee'</span><span class="ace_punctuation ace_operator">,</span>                            <span class="ace_string">'compass'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'renegade'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'patriot x'</span>
+                            <span
+                                class="ace_paren ace_rparen">]</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">jeeps</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">forEach</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">item</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">index</span><span class="ace_paren ace_rparen">)</span>
+                            <span
+                                class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">item</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">})</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>for... in loop</h1>
+            <p>The JavaScript for/in statement loops through the properties of an object</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">jeep</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">make</span><span class="ace_punctuation ace_operator">:</span> <span class="ace_string">'jeep'</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">model</span><span class="ace_punctuation ace_operator">:</span> <span class="ace_string">'wrangler'</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">year</span><span class="ace_punctuation ace_operator">:</span> <span class="ace_constant ace_numeric">2014</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">color</span><span class="ace_punctuation ace_operator">:</span> <span class="ace_string">'black'</span><span class="ace_punctuation ace_operator">,</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">doors</span><span class="ace_punctuation ace_operator">:</span> <span class="ace_constant ace_numeric">2</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">for</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">prop</span> <span class="ace_keyword">in</span> <span class="ace_identifier">jeep</span>
+                        <span
+                            class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">prop</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <p>To access the values of each of the objects properties, pass the object name, and using bracket notation, pass the property name.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">for</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">prop</span> <span class="ace_keyword">in</span> <span class="ace_identifier">jeep</span>
+                        <span
+                            class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">jeep</span><span class="ace_paren ace_lparen">[</span><span class="ace_identifier">prop</span><span class="ace_paren ace_rparen">])</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>for... of loop</h1>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Comparison & Logical Operators.html';
+            if (e.keyCode === 37) window.location.href = 'Arrays.html';
+        }
+    </script>
+</body>
+
+</html>

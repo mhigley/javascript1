@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Convensions.html'>Convensions</a>, Previous: <a href='JavaScript — Introduction.html'>JavaScript — Introduction</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>ES5, ES6 and beyond</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell markdown-cell">
+            <h1>What is ECMAScript?</h1>
+            <p>ECMAscript is a standard.</p>
+            <p>It guarantees that when you write code following the rules of the standard it will run fine in a browser if the browser implements the same standard.</p>
+            <h4>Why do we need a standard?</h4>
+            <p>Back when JavaScript was first created, there was a war between browsers for market share. JavaScript was written for Netscape and Microsoft implemented their own version called JScript. This battle caused big problems for developers who had
+                to write different scripts for different browsers.</p>
+            <p>To solve the problem, the language was standardized by ECMAscript International, and all browsers agreed to implement this new specification.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <h1>ES5</h1>
+            <p>Standardized in 2009</p>
+        </div>
+        <div class="cell markdown-cell">
+            <h1>ES6</h1>
+            <p>Development in progress</p>
+            <h4>New Features</h4>
+            <ul>
+                <li>let &amp; const</li>
+                <li>Arrow Functions</li>
+                <li>Template Strings</li>
+            </ul>
+            <h4>Other Features include:</h4>
+            <ul>
+                <li>Promises</li>
+                <li>Classes</li>
+                <li>Enhanced Object Literals</li>
+                <li>Destructuring</li>
+                <li>And much, much more!</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Convensions.html';
+            if (e.keyCode === 37) window.location.href = 'JavaScript — Introduction.html';
+        }
+    </script>
+</body>
+
+</html>

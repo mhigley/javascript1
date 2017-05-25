@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Browser Storage.html'>Browser Storage</a>, Previous: <a href='Day09 Assignment.html'>Day09 Assignment</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>Timers</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell markdown-cell">
+            <h1>setTimeout()</h1>
+            <p>The <strong>setTimeout()</strong> method sets a timer which executes a function or specified piece of code once after the timer expires.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment ace_xml">&lt;!-- HTML --&gt;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_form ace_tag-name ace_xml">button</span><span class="ace_text ace_tag-whitespace ace_xml"> </span>
+                        <span
+                            class="ace_entity ace_other ace_attribute-name ace_xml">onclick</span><span class="ace_keyword ace_operator ace_attribute-equals ace_xml">=</span><span class="ace_string ace_attribute-value ace_xml">"delayPopup()"</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                            <span
+                                class="ace_text ace_xml">Start Timer</span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span><span class="ace_meta ace_tag ace_form ace_tag-name ace_xml">button</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">/* JavaScript */</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">timer</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">delayPopup</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">timer</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">setTimeout</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_identifier">popup</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">3000</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">popup</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_support ace_function">alert</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'This took a long time to run!'</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <p>On button click, wait 3000 milliseconds then print an alert window to the screen.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>clearTimeout()</h1>
+            <p>The <strong>clearTimeout()</strong> method cancels a timeout previously established by calling setTimeout().</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment ace_xml">&lt;!-- HTML --&gt;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_form ace_tag-name ace_xml">button</span><span class="ace_text ace_tag-whitespace ace_xml"> </span>
+                        <span
+                            class="ace_entity ace_other ace_attribute-name ace_xml">onclick</span><span class="ace_keyword ace_operator ace_attribute-equals ace_xml">=</span><span class="ace_string ace_attribute-value ace_xml">"delayPopup()"</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                            <span
+                                class="ace_text ace_xml">Start Timer</span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span><span class="ace_meta ace_tag ace_form ace_tag-name ace_xml">button</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_form ace_tag-name ace_xml">button</span><span class="ace_text ace_tag-whitespace ace_xml"> </span>
+                        <span
+                            class="ace_entity ace_other ace_attribute-name ace_xml">onclick</span><span class="ace_keyword ace_operator ace_attribute-equals ace_xml">=</span><span class="ace_string ace_attribute-value ace_xml">"cancelPopup()"</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                            <span
+                                class="ace_text ace_xml">Cancel Timer</span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span><span class="ace_meta ace_tag ace_form ace_tag-name ace_xml">button</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">/* JavaScript */</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">timer</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">delayPopup</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">timer</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">setTimeout</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_identifier">popup</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">3000</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">popup</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_support ace_function">alert</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'This took a long time to run!'</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">cancelPopup</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">clearTimeout</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">timer</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <p>If the <code>Start Timer</code> button has been clicked, <code>Cancel Timer</code> will prevent the popup from printing if pressed within 3000 milliseconds.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>setInterval()</h1>
+            <p>The <strong>setInterval()</strong> method repeatedly calls a function or executes a code snippet, with a fixed time delay between each call.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">foreverGreeting</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">setInterval</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">printGreeting</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">500</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">greetingNumber</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_constant ace_numeric">0</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">printGreeting</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">greetingNumber</span><span class="ace_keyword ace_operator">++</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_string">'This is greeting number '</span><span class="ace_keyword ace_operator">+</span><span class="ace_identifier">greetingNumber</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <p>Every 500 milliseconds, increment the <code>greetingNumber</code> and print to the console.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>clearInterval()</h1>
+            <p>The <strong>clearInterval()</strong> method cancels a timeout previously established by calling clearInterval().</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">finiteGreeting</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">setInterval</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">printGreeting</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">500</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">greetingNumber</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_constant ace_numeric">0</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">printGreeting</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">greetingNumber</span><span class="ace_keyword ace_operator">++</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_keyword">if</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">greetingNumber</span> <span class="ace_keyword ace_operator">&lt;</span>                        <span class="ace_constant ace_numeric">10</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_string">'This is greeting number '</span><span class="ace_keyword ace_operator">+</span><span class="ace_identifier">greetingNumber</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span><span class="ace_keyword">else</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_identifier">clearInterval</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">finiteGreeting</span>
+                        <span
+                            class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <p>Every 500 milliseconds, <strong>if</strong> the <code>greetingNumber</code> is <em>less than 10</em>, print to the console.</p>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Browser Storage.html';
+            if (e.keyCode === 37) window.location.href = 'Day09 Assignment.html';
+        }
+    </script>
+</body>
+
+</html>

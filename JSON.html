@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='XMLHttpRequest().html'>XMLHttpRequest()</a>, Previous: <a href='Browser Storage.html'>Browser Storage</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>JSON</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell markdown-cell">
+            <p>JSON, or JavaScript Object Notation, is a minimal, readable format for structuring data. It is used primarily to transmit data between a server and web application.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <p>The two primary parts that make up JSON are keys and values. Together they make a key/value pair.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_variable">"characterName" </span>: <span class="ace_string">"Indominus Rex"</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <p><code>characterName</code> is the <strong>key</strong>, and <code>Indominus Rex</code> is the <strong>value</strong>.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <p>Any data type can be stored as <strong>JSON</strong>. You should recognize some of the syntax as covered previously. Arrays use <code>[]</code> and objects use <code>{}</code>.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Arrays</h4>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_variable">"characters" </span>: <span class="ace_paren ace_lparen">[</span><span class="ace_string">"Alan"</span>, <span class="ace_string">"Ellie"</span>,
+                        <span class="ace_string">"Lex"</span>, <span class="ace_string">"Tim"</span>, <span class="ace_string">"Ian"</span><span class="ace_paren ace_rparen">]</span>;
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Objects</h4>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_variable">"traits" </span>: <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable">"firstname" </span>: <span class="ace_string">"Matthew"</span>,
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable">"lastname" </span>: <span class="ace_string">"Higley"</span>,
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable">"eyes" </span>: <span class="ace_string">"green"</span>,
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable">"hair" </span>: <span class="ace_string">"brown"</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Complete Example</h4>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable">"user" </span>: <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_variable">"first" </span>: <span class="ace_string">"Matthew"</span>,
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_variable">"last" </span>: <span class="ace_string">"Higley"</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span>,
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable">"phone" </span>: <span class="ace_string">"559-252-5555"</span>,
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable">"address" </span>: <span class="ace_string">"375 Main St., Fresno CA 93755"</span>,
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable">"vehicle" </span>: <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_variable">"make" </span>: <span class="ace_string">"jeep"</span>,
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_variable">"model" </span>: <span class="ace_string">"wrangler"</span>,
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_variable">"year" </span>: <span class="ace_string">"2014"</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span>,
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_variable">"favMovies" </span>: <span class="ace_paren ace_lparen">[</span><span class="ace_string">"Jurassic Park"</span>, <span class="ace_string">"Raiders of the Lost Ark"</span>,
+                        <span class="ace_string">"Holy Grail"</span><span class="ace_paren ace_rparen">]</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'XMLHttpRequest().html';
+            if (e.keyCode === 37) window.location.href = 'Browser Storage.html';
+        }
+    </script>
+</body>
+
+</html>

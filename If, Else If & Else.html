@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Day04 Assignment.html'>Day04 Assignment</a>, Previous: <a href='Comparison & Logical Operators.html'>Comparison & Logical Operators</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>If, Else If & Else</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell text-cell"><span style="color: rgb(59, 60, 64); font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-variant-ligatures: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);">The&nbsp;</span><strong style="margin: 0px; padding: 0px; border: 0px; color: rgb(59, 60, 64); font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-variant-ligatures: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);">if statement</strong>
+            <span
+                style="color: rgb(59, 60, 64); font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-variant-ligatures: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);">&nbsp;executes a statement if a specified condition is truthy. If the condition is falsy, another statement can be executed.</span>
+        </div>
+        <div class="cell markdown-cell">
+            <h1>if()</h1>
+            <p>It's not uncommon to have something specific run only if a certain expression is true, otherwise have nothing happen</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">getTime</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_keyword">new</span>                        <span class="ace_variable ace_language">Date</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">getHours</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">if</span> <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">getTime</span> <span class="ace_keyword ace_operator">&lt;</span>                        <span class="ace_constant ace_numeric">12</span><span class="ace_paren ace_rparen">)</span> <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_support ace_function">alert</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"Good Morning!"</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>if(), else</h1>
+            <p>However, having an alternative block of code run should the initial value prove false is a much better option.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">getTime</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_keyword">new</span>                        <span class="ace_variable ace_language">Date</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">getHours</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">if</span> <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">getTime</span> <span class="ace_keyword ace_operator">&lt;</span>                        <span class="ace_constant ace_numeric">12</span><span class="ace_paren ace_rparen">)</span> <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_support ace_function">alert</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"Good Morning!"</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span><span class="ace_keyword">else</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_support ace_function">alert</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"Good Day."</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>if(), else if(), else</h1>
+            <p>If you need an even greater amount of detail, you can break the expression up into an infinite number of parts. It will scan through each one looking for the first expression to be found true and then run the code.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">getTime</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_keyword">new</span>                        <span class="ace_variable ace_language">Date</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">getHours</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">if</span> <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">getTime</span> <span class="ace_keyword ace_operator">&lt;</span>                        <span class="ace_constant ace_numeric">12</span><span class="ace_paren ace_rparen">)</span> <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_support ace_function">alert</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"Good Morning!"</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span><span class="ace_keyword">else</span> <span class="ace_keyword">if</span> <span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_identifier">getTime</span> <span class="ace_keyword ace_operator">&lt;</span> <span class="ace_constant ace_numeric">18</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_support ace_function">alert</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"Good Afternoon."</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span><span class="ace_keyword">else</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_support ace_function">alert</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"Good Evening"</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>if(), else if(), else if(), else</h1>
+            <h2>if(), else if(), else if(), else if(), else</h2>
+            <h3>if(), else if(), else if(), else if(), else if(), else</h3>
+            <h4>if(), else if(), else if(), else if(), else if(), else if(), else</h4>
+            <h5>if(), else if(), else if(), else if(), else if(), else if(), else if(), else</h5>
+            <h6>if(), else if(), else if(), else if(), else if(), else if(), else if(), else if(), else</h6>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Day04 Assignment.html';
+            if (e.keyCode === 37) window.location.href = 'Comparison & Logical Operators.html';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Closure.html'>Closure</a>, Previous: <a href='JSON.html'>JSON</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>XMLHttpRequest()</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell markdown-cell">
+            <p>XMLHttpRequest is an API that provides client functionality for transferring data between a client and a server. It provides an easy way to retrieve data from a URL without having to do a full page refresh. This enables a Web page to update
+                just a part of the page without disrupting what the user is doing.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <p>Everything begins however with a new instance of the <strong>XMLHttpRequest()</strong>.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">req</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_keyword">new</span>                        <span class="ace_identifier">XMLHttpRequest</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h2>Methods</h2>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>.open()</h4>
+            <p>Initializes a request.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">open</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_string">'GET'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'https://api.github.com'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>.send()</h4>
+            <p>Sends the request.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">send</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_constant ace_language">null</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h2>Properties</h2>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>.readyState</h4>
+            <p>Holds the status of the XMLHttpRequest. The <code>.readyState</code> is one of two things you want to check before continuing on in your code. The other would be <code>.status</code>;</p>
+        </div>
+        <div class="cell markdown-cell">
+            <p>0: request not initialized<br> 1: server connection established<br> 2: request received<br> 3: processing request<br> 4: request finished and response is ready</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_entity ace_name ace_function">onload</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_keyword">if</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span>
+                        <span
+                            class="ace_support ace_constant">readyState</span> <span class="ace_keyword ace_operator">===</span> <span class="ace_constant ace_numeric">4</span> <span class="ace_keyword ace_operator">&amp;&amp;</span> <span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span>
+                            <span
+                                class="ace_support ace_constant">status</span> <span class="ace_keyword ace_operator">===</span> <span class="ace_constant ace_numeric">200</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_comment">// code</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>.status</h4>
+            <p>Returns the status-number of a request. The <code>.status</code> is one of two things you want to check before continuing on in your code. The other would be <code>.readyState</code>;</p>
+        </div>
+        <div class="cell markdown-cell">
+            <p>200: "OK"<br> 404: "Not Found"<br> 503: "Service Unavailable"<br> Etc...
+            </p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_entity ace_name ace_function">onload</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_keyword">if</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span>
+                        <span
+                            class="ace_support ace_constant">readyState</span> <span class="ace_keyword ace_operator">===</span> <span class="ace_constant ace_numeric">4</span> <span class="ace_keyword ace_operator">&amp;&amp;</span> <span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span>
+                            <span
+                                class="ace_support ace_constant">status</span> <span class="ace_keyword ace_operator">===</span> <span class="ace_constant ace_numeric">200</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_comment">// code</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>.statusText</h4>
+            <p>Returns the status-text (e.g. "OK" or "Not Found")</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_entity ace_name ace_function">onload</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_keyword">if</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span>
+                        <span
+                            class="ace_support ace_constant">readyState</span> <span class="ace_keyword ace_operator">===</span> <span class="ace_constant ace_numeric">4</span> <span class="ace_keyword ace_operator">&amp;&amp;</span> <span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span>
+                            <span
+                                class="ace_support ace_constant">status</span> <span class="ace_keyword ace_operator">===</span> <span class="ace_constant ace_numeric">4</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_comment">// code</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span><span class="ace_keyword">else</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_string">'error'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">statusText</span>
+                            <span
+                                class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>.responseText</h4>
+            <p>Returns the response data as a string.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_entity ace_name ace_function">onload</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_keyword">if</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span>
+                        <span
+                            class="ace_support ace_constant">readyState</span> <span class="ace_keyword ace_operator">===</span> <span class="ace_constant ace_numeric">4</span> <span class="ace_keyword ace_operator">&amp;&amp;</span> <span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span>
+                            <span
+                                class="ace_support ace_constant">status</span> <span class="ace_keyword ace_operator">===</span> <span class="ace_constant ace_numeric">4</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_string">'success'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">responseText</span>
+                            <span
+                                class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span><span class="ace_keyword">else</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_string">'error'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">statusText</span>
+                            <span
+                                class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h2>Complete Example</h2>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">req</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_keyword">new</span>                        <span class="ace_identifier">XMLHttpRequest</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">open</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_string">'GET'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'https://api.github.com'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_entity ace_name ace_function">onload</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_keyword">if</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span>
+                        <span
+                            class="ace_support ace_constant">readyState</span> <span class="ace_keyword ace_operator">===</span> <span class="ace_constant ace_numeric">4</span> <span class="ace_keyword ace_operator">&amp;&amp;</span> <span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span>
+                            <span
+                                class="ace_support ace_constant">status</span> <span class="ace_keyword ace_operator">===</span> <span class="ace_constant ace_numeric">4</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_string">'success'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">responseText</span>
+                            <span
+                                class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span><span class="ace_keyword">else</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_string">'error'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">statusText</span>
+                            <span
+                                class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">send</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_constant ace_language">null</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Functionized Example</h4>
+            <p>In modularizing the <em>XMLHttpRequest()</em>, we have an opportunity to dynamically supply the location of the API call and the function that will process the data. See the <code>getReq()</code> parameters that are set. Each time <code>getReq()</code>                is called, you can provide a necessary endpoint. For each of these calls, you can provide a function that processes the data specifically for that call.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">getReq</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'https://api.github.com'</span><span class="ace_punctuation ace_operator">,</span>                        <span class="ace_identifier">processAjax</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">getReq</span><span class="ace_paren ace_lparen">(</span><span class="ace_variable ace_parameter">url</span>
+                        <span
+                            class="ace_punctuation ace_operator">, </span><span class="ace_variable ace_parameter">callback</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">var</span> <span class="ace_identifier">req</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_keyword">new</span>                        <span class="ace_identifier">XMLHttpRequest</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_dom">open</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_string">'GET'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">url</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_entity ace_name ace_function">onload</span> <span class="ace_keyword ace_operator">=</span>                        <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_keyword">if</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">req</span>
+                        <span
+                            class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">readyState</span> <span class="ace_keyword ace_operator">===</span> <span class="ace_constant ace_numeric">4</span> <span class="ace_keyword ace_operator">&amp;&amp;</span> <span class="ace_identifier">req</span>
+                            <span
+                                class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">status</span> <span class="ace_keyword ace_operator">===</span> <span class="ace_constant ace_numeric">4</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span> <span class="ace_identifier">callback</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_variable ace_language">JSON</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">parse</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span>
+                            <span
+                                class="ace_support ace_constant">responseText</span><span class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_paren ace_rparen">}</span><span class="ace_keyword">else</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span>
+                        <span
+                            class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'error'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span>
+                            <span
+                                class="ace_support ace_constant">statusText</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_identifier">req</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">send</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_constant ace_language">null</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">function</span> <span class="ace_entity ace_name ace_function">processAjax</span><span class="ace_paren ace_lparen">(</span>
+                        <span
+                            class="ace_variable ace_parameter">object</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_identifier">object</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Closure.html';
+            if (e.keyCode === 37) window.location.href = 'JSON.html';
+        }
+    </script>
+</body>
+
+</html>

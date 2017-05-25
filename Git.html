@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='JavaScript — Introduction.html'>JavaScript — Introduction</a>, Previous: <a href='Getting Started.html'>Getting Started</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>Git</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell markdown-cell">
+            <h1>Basic Commands</h1>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>git status</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>git add .</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>git commit -m "your commit message"</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>git push</div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>Creating a Repository</h1>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>cd ~/Desktop</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>mkdir geekwise-javascript1</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>cd geekwise-javascript1</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>touch README.md .gitignore</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>git init</div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <p>Notice on line 4, we're actually creating two files in one line. The first: <code>README.md</code> is there to provide information or instruction to the code in your repository.</p>
+            <p>The second: <code>.gitignore</code> is a little more important. We'll get into the details towards the end of the course, but for now, go to this address:</p>
+            <p><a href="https://goo.gl/gDm3wC">https://goo.gl/gDm3wC</a></p>
+            <p>Copy and all the code from the Gist window and paste it into your new <code>.gitignore</code> file. We however need to add a couple more lines to the very end of the file:</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span># Environment Variables #</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>#########################</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>env.json</div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>Github</h1>
+            <p>From <a href="http://github.com">http://github.com</a> create a new repository.</p>
+        </div>
+        <div class="cell text-cell"><img src="resources/F610118057BF6694E5A43DBACF5F2AFC.png" alt="repo1.png" width="800" height="510"><br></div>
+        <div class="cell markdown-cell">
+            <p>After you click <em>Create repository</em>, you'll see this rather disconcerting page, but worry not, there are only a few lines that we need to concern ourselves with.</p>
+        </div>
+        <div class="cell text-cell"><img src="resources/3A280F752233FB018A8251A2B710F1F2.png" alt="repo2.png" width="800" height="510"><br></div>
+        <div class="cell markdown-cell">
+            <p>Under the headline '...or create a new repository on the command line' we're going to pick up where we left off.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>git add .</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>git commit -m 'first commit'</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>git remote add origin git@github.com:[YOUR USERNAME]/[YOUR REPOSITORY].git</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>git push -u origin master</div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <p>Don't worry... the next time you add new content the commands are simpler. Github just needed some additional options the first time around. See the top of the page under <em>Basic Commands</em>.</p>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'JavaScript — Introduction.html';
+            if (e.keyCode === 37) window.location.href = 'Getting Started.html';
+        }
+    </script>
+</body>
+
+</html>

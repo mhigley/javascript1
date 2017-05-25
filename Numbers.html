@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Math.html'>Math</a>, Previous: <a href='Strings.html'>Strings</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>Numbers</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell markdown-cell">
+            <h1>.isInteger()</h1>
+            <p>The Number.isInteger() method determines whether the passed value is an integer.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_variable ace_language">Number</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">isInteger</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">5</span>
+                            <span
+                                class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_variable ace_language">Number</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">isInteger</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">7.1</span>
+                            <span
+                                class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_variable ace_language">Number</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">isInteger</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_language">NaN</span>
+                            <span
+                                class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.parseFloat()</h1>
+            <p>The Number.parseFloat() method parses a string argument and returns a floating point number.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_variable ace_language">Number</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">parseFloat</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'5.1'</span>
+                            <span
+                                class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_variable ace_language">Number</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">parseFloat</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'365.1 degrees'</span>
+                            <span
+                                class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_variable ace_language">Number</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">parseFloat</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'Lex Murphy is 11'</span>
+                            <span
+                                class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.parseInt()</h1>
+            <p>The parseInt() function parses a string and returns an integer. Can also be use globally with <code>parseInt()</code>.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_variable ace_language">Number</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">parseInt</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'89'</span>
+                            <span
+                                class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_variable ace_language">Number</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">parseInt</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'matt'</span>
+                            <span
+                                class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// global usage</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_variable ace_language">parseInt</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'matt'</span><span class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.isNaN()</h1>
+            <p>Determine whether the passed value is NaN. This method returns true if the value is of the type Number, and equates to NaN. Otherwise it returns false.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_variable ace_language">Number</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">isNaN</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">5</span>
+                            <span
+                                class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_variable ace_language">Number</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">isNaN</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'matt'</span>
+                            <span
+                                class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span
+                            class="ace_paren ace_lparen">(</span><span class="ace_variable ace_language">Number</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">isNaN</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_language">NaN</span>
+                            <span
+                                class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Math.html';
+            if (e.keyCode === 37) window.location.href = 'Strings.html';
+        }
+    </script>
+</body>
+
+</html>

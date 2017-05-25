@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='JSON.html'>JSON</a>, Previous: <a href='Timers.html'>Timers</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>Browser Storage</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell markdown-cell">
+            <h1>localStorage</h1>
+            <p>The localStorage property allows you to access a local Storage object. Data stored in localStorage has no expiration time. Active tab can be refreshed, same destination can be opened in a new tab and data remains, and browser can be completely
+                closed, but upon return to same destination, data remains.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>.setItem()</h4>
+            <p>When passed a key name and value, will add that key to the storage, or update that key's value if it already exists.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">localStorage</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">setItem</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_string">'username'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'Sample User'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>.getItem()</h4>
+            <p>When passed a key name, will return that key's value.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">savedUsername</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">localStorage</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">getItem</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'username'</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">savedUsername</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Sample User</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>.clearItem()</h4>
+            <p>When invoked, will empty all keys out of the storage.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">localStorage</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">clear</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_string">'username'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell text-cell"></div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>sessionStorage</h1>
+            <p>The sessionStorage property allows you to access a session Storage object for the current origin. Data stored in sessionStorage gets cleared when the page session ends. A page session lasts for as long as the browser is open and survives over
+                page reloads and restores. Opening a page in a new tab or window will cause a new session to be initiated.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>.setItem()</h4>
+            <p>When passed a key name and value, will add that key to the storage, or update that key's value if it already exists.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">sessionStorage</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">setItem</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_string">'tempUsername'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'Sample User'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>.getItem()</h4>
+            <p>When passed a key name, will return that key's value.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">savedTempUsername</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">sessionStorage</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">getItem</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'tempUsername'</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">savedTempUsername</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Sample User</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>.clearItem()</h4>
+            <p>When invoked, will empty all keys out of the storage.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">sessionStorage</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">clear</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_string">'tempUsername'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'JSON.html';
+            if (e.keyCode === 37) window.location.href = 'Timers.html';
+        }
+    </script>
+</body>
+
+</html>

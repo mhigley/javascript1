@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Numbers.html'>Numbers</a>, Previous: <a href='Day01 Assignment.html'>Day01 Assignment</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>Strings</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell text-cell"><span style="font-variant-ligatures: normal; orphans: 2; widows: 2;">The&nbsp;</span>
+            <font color="#3b3c40" face="Consolas, Liberation Mono, Courier, monospace"><span style="orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-style: inherit;">String</span></font><span style="margin: 0px; padding: 0px; border: 0px; font-variant-ligatures: normal; orphans: 2; widows: 2;">&nbsp;global object is a constructor for strings, or a sequence of characters.</span></div>
+        <div
+            class="cell markdown-cell">
+            <h1>.length</h1>
+            <p>The length property represents the length of a string.</p>
+    </div>
+    <div class="cell code-cell">
+        <div class="ace-monokai">
+            <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_string">'matthew'</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">length</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">str</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">length</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// 7</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">fullName</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Matthew David Higley'</span>
+                    <span
+                        class="ace_punctuation ace_operator">;</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">fullName</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">length</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// 20</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cell markdown-cell">
+        <hr>
+        <h1>.charAt()</h1>
+        <p>Returns the character at the specified index (position)</p>
+    </div>
+    <div class="cell code-cell">
+        <div class="ace-monokai">
+            <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">fullName</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Matthew David Higley'</span>
+                    <span
+                        class="ace_punctuation ace_operator">;</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">fullName</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">charAt</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>                        <span class="ace_comment">// M</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">fullName</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">charAt</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">8</span><span class="ace_paren ace_rparen">))</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// D</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">fullName</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">charAt</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">250</span><span class="ace_paren ace_rparen">))</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// ""</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cell markdown-cell">
+        <hr>
+        <h1>.indexOf()</h1>
+        <p>Returns the position of the first found occurrence of a specified value in a string</p>
+    </div>
+    <div class="cell code-cell">
+        <div class="ace-monokai">
+            <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">fullName</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Matthew David Higley'</span>
+                    <span
+                        class="ace_punctuation ace_operator">;</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">fullName</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">indexOf</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'t'</span><span class="ace_paren ace_rparen">))</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// 2</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">fullName</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">indexOf</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'D'</span><span class="ace_paren ace_rparen">))</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// 8</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">fullName</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">indexOf</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'H'</span><span class="ace_paren ace_rparen">))</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// 14</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cell markdown-cell">
+        <hr>
+        <h1>.concat()</h1>
+        <p>Combines the text of two strings and returns a new string.</p>
+    </div>
+    <div class="cell code-cell">
+        <div class="ace-monokai">
+            <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">hello</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Hello'</span>
+                    <span
+                        class="ace_punctuation ace_operator">;</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">hello</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">concat</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">' JavaScript'</span><span class="ace_paren ace_rparen">))</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Hello JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cell markdown-cell">
+        <blockquote>
+            <p>Tip: For performance reasons, it is recommended to use the assignment operators (+, +=) instead of the <code>concat()</code> method.</p>
+        </blockquote>
+    </div>
+    <div class="cell code-cell">
+        <div class="ace-monokai">
+            <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">hello</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Hello'</span>
+                    <span
+                        class="ace_punctuation ace_operator">;</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">hello</span> <span class="ace_keyword ace_operator">+</span> <span class="ace_string">' JavaScript'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Hello JavaScript</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">hello</span> <span class="ace_keyword ace_operator">+=</span> <span class="ace_string">' there'</span><span class="ace_punctuation ace_operator">;</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">hello</span> <span class="ace_keyword ace_operator">+</span> <span class="ace_string">' Javascript'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Hello there JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cell markdown-cell">
+        <hr>
+        <h1>.substring() &amp; .substr()</h1>
+        <p>Extracts the characters from a string</p>
+        <h4>.substring()</h4>
+        <p>Returns a subset of a string between one index and another, or through the end of the string.</p>
+    </div>
+    <div class="cell code-cell">
+        <div class="ace-monokai">
+            <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">myName</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Matthew'</span>
+                    <span
+                        class="ace_punctuation ace_operator">;</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">myName</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">substring</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">0</span><span class="ace_punctuation ace_operator">,</span>                        <span class="ace_constant ace_numeric">3</span><span class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Mat</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">myName</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">substring</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">3</span><span class="ace_punctuation ace_operator">,</span>                        <span class="ace_constant ace_numeric">6</span><span class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// the</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">myName</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">substring</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">3</span><span class="ace_paren ace_rparen">))</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// thew</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cell markdown-cell">
+        <h4>.substr()</h4>
+        <p>Returns the characters in a string beginning at the specified location through the specified number of characters. If length is omitted, substr() extracts characters to the end of the string.</p>
+    </div>
+    <div class="cell code-cell">
+        <div class="ace-monokai">
+            <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">myName</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Matthew'</span>
+                    <span
+                        class="ace_punctuation ace_operator">;</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">myName</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">substr</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">0</span><span class="ace_punctuation ace_operator">,</span>                        <span class="ace_constant ace_numeric">3</span><span class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// Mat</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">myName</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">substr</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">3</span><span class="ace_punctuation ace_operator">,</span>                        <span class="ace_constant ace_numeric">2</span><span class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// th</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">myName</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">substr</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">3</span><span class="ace_paren ace_rparen">))</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// thew</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cell markdown-cell">
+        <hr>
+        <h1>.toLowerCase() &amp; .toUpperCase()</h1>
+        <p>Returns the calling string value converted to declared casing.</p>
+    </div>
+    <div class="cell markdown-cell">
+        <h4>.toLowerCase()</h4>
+        <p>Converts to lowercase.</p>
+    </div>
+    <div class="cell code-cell">
+        <div class="ace-monokai">
+            <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">myName</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Matthew'</span>
+                    <span
+                        class="ace_punctuation ace_operator">;</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">myName</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">toLowerCase</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>                        <span class="ace_comment">// matthew</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">myOtherName</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'DAVID'</span>
+                    <span
+                        class="ace_punctuation ace_operator">;</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">myOtherName</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">toLowerCase</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>                        <span class="ace_comment">// david</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cell markdown-cell">
+        <h4>.toUpperCase()</h4>
+        <p>Converts to uppercase.</p>
+    </div>
+    <div class="cell code-cell">
+        <div class="ace-monokai">
+            <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">myName</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'Matthew'</span>
+                    <span
+                        class="ace_punctuation ace_operator">;</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">myName</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">toUpperCase</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>                        <span class="ace_comment">// MATTHEW</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">myOtherName</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'david'</span>
+                    <span
+                        class="ace_punctuation ace_operator">;</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">myOtherName</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">toUpperCase</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>                        <span class="ace_comment">// DAVID</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cell markdown-cell">
+        <hr>
+        <h1>.trim()</h1>
+        <p>Removes whitespace from both ends of a string.</p>
+    </div>
+    <div class="cell code-cell">
+        <div class="ace-monokai">
+            <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">extraSpaces</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'                   stuff   and things               '</span>
+                    <span
+                        class="ace_punctuation ace_operator">;</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">extraSpaces</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                </div>
+                <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span>
+                    <span
+                        class="ace_identifier">extraSpaces</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">trim</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">))</span><span class="ace_punctuation ace_operator">;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Numbers.html';
+            if (e.keyCode === 37) window.location.href = 'Day01 Assignment.html';
+        }
+    </script>
+</body>
+
+</html>

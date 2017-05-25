@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>Next: <a href='Loops.html'>Loops</a>, Previous: <a href='Day02 Assignment.html'>Day02 Assignment</a>, Up: <a href='index.html'>Index</a></div>
+    </div>
+    <div id="titlearea">
+        <h2>Arrays</h2>
+    </div>
+    <div id="contentarea">
+        <div class="cell markdown-cell">
+            <p>The JavaScript Array object is a global object that is used in the construction of arrays; which are list-like objects. Arrays are used to store multiple values in a single variable. Arrays can also store different types of elements. You can
+                put objects, entire functions or other arrays into arrays!</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">colors</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_paren ace_lparen">[</span>
+                        <span class="ace_string">'red'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'orange'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'blue'</span><span class="ace_paren ace_rparen">]</span>
+                        <span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <p>Arrays are zero based and every item has a corresponding index.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">sodas</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_paren ace_lparen">[</span>
+                        <span class="ace_string">'pepsi'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'coke'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'mountain dew'</span>
+                        <span
+                            class="ace_paren ace_rparen">]</span>
+                            <span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">sodas</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Access an Array item</h4>
+            <p>You refer to an array element by referring to the index number.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">soda</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">sodas</span>
+                        <span class="ace_paren ace_lparen">[</span><span class="ace_constant ace_numeric">0</span><span class="ace_paren ace_rparen">]</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// pepsi</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">lastSoda</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">sodas</span>
+                        <span class="ace_paren ace_lparen">[</span><span class="ace_identifier">sodas</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">length</span> <span class="ace_keyword ace_operator">-</span>                        <span class="ace_constant ace_numeric">1</span>
+                        <span class="ace_paren ace_rparen">]</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// mountain dew</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Length property</h4>
+            <p>The length property of an array returns the length of an array (the number of array elements). The length property will always be one higher than the highest index.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">sodas</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_constant">length</span><span class="ace_punctuation ace_operator">;</span>                        <span class="ace_comment">// 3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Loop over an Array</h4>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">sodas</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">forEach</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">item</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">index</span>
+                        <span
+                            class="ace_paren ace_rparen">)</span>
+                            <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">index</span> <span class="ace_keyword ace_operator">+</span> <span class="ace_string">' : '</span> <span class="ace_keyword ace_operator">+</span> <span class="ace_identifier">item</span>
+                        <span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">})</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// 0 : pepsi</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// 1 : coke</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// 2 : mountain dew</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <blockquote>
+                <p>Sneak Peek: The <strong>forEach()</strong> loop is a special type of loop used exclusively for Arrays. It offers a lot of options for accessing the contents of an Array. There are many other types of loops that we'll be exploring soon.</p>
+            </blockquote>
+        </div>
+        <div class="cell markdown-cell">
+            <blockquote>
+                <p>Sneak Peek: Tucked inside of the <strong>forEach()</strong> is what's called an anonymous function. This function—as shown between the perenthesis—is expecting two things: an <strong>item</strong> and an <strong>index</strong>. These "expectations"
+                    are called <em>parameters</em>, and are being provided by the <strong>forEach()</strong> loop. We'll be digging into functions in greater detail soon.</p>
+            </blockquote>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <blockquote>
+                <p>Note: In future examples, sometimes the <code>console.log</code> will be left off for brevity. If the code is to be demonstrated from the external script file, please include <code>console.log</code> with all examples.</p>
+            </blockquote>
+            <h1>Array.isArray()</h1>
+            <p>Determines whether the passed value is an Array.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_variable ace_language">Array</span><span class="ace_punctuation ace_operator">.</span><span class="ace_identifier">isArray</span><span class="ace_paren ace_lparen">([</span>
+                        <span class="ace_string">'red'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'orange'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'green'</span><span class="ace_paren ace_rparen">])</span>
+                        <span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.push()</h1>
+            <p>Adds new elements to the end of an array, and returns the new length</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">newColorLength</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">colors</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">push</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'violet'</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">colors</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// ['red', 'orange', 'blue', 'violet']</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">newColorLength</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// 4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.pop()</h1>
+            <p>Removes the last element of an array, and returns that element</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">lastColor</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">colors</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">pop</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">colors</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// ['red', 'orange', 'blue']</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">lastColor</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// violet</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.unshift()</h1>
+            <p>Adds new elements to the beginning of an array, and returns the new length</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">newColorLength</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">colors</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">unshift</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'yellow'</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">colors</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// ['yellow', 'red', 'orange', 'blue']</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">newColorLength</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// 4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.shift()</h1>
+            <p>Removes the first element of an array, and returns that element</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">firstColor</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">colors</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">shift</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">colors</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// ['red', 'orange', 'blue']</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">firstColor</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// yellow</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.indexOf()</h1>
+            <p>Search the array for the first instance of an element and returns its position</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">colorPosition</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">colors</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">indexOf</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'blue'</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// 2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.lastIndexOf()</h1>
+            <p>Search the array for the first instance of an element, starting at the end, and returns its position</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">colors</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">push</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_string">'green'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'violet'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'blue'</span>
+                        <span
+                            class="ace_punctuation ace_operator">,</span> <span class="ace_string">'pink'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">colors</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// ['red', 'orange', 'blue', 'green', 'violet', 'blue', 'pink']</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">lastColorPosition</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">colors</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">lastIndexOf</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'blue'</span><span class="ace_paren ace_rparen">)</span>
+                        <span
+                            class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">lastColorPosition</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// 5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.splice()</h1>
+            <p>Changes the contents of an array by removing existing elements and/or adding new elements.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Remove an item by index position</h4>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">removeItem</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">colors</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">splice</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">2</span><span class="ace_punctuation ace_operator">,</span>                        <span class="ace_constant ace_numeric">1</span>
+                        <span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">colors</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// ['red', 'orange', 'green', 'violet', 'blue', 'pink']</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">removeItem</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// blue</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Remove multiple items at an index position</h4>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">removeItems</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">colors</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">splice</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">1</span><span class="ace_punctuation ace_operator">,</span>                        <span class="ace_constant ace_numeric">3</span>
+                        <span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">colors</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// ['red', 'blue', 'pink']</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">removeItems</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// ['orange', 'green', 'violet']</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Adding items at index position</h4>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">addItems</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">colors</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">splice</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">1</span><span class="ace_punctuation ace_operator">,</span>                        <span class="ace_constant ace_numeric">0</span>
+                        <span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'orange'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'yellow'</span><span class="ace_punctuation ace_operator">,</span>                        <span class="ace_string">'green'</span>
+                        <span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">colors</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// ['red', 'orange', 'yellow', 'green', 'blue', 'pink']</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">addItems</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// []</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Remove item by index position and add item</h4>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">removeAndAdd</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">colors</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">splice</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">5</span><span class="ace_punctuation ace_operator">,</span>                        <span class="ace_constant ace_numeric">1</span>
+                        <span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'purple'</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">colors</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// ['red', 'orange', 'yellow', 'green', 'blue', 'purple']</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">removeAndAdd</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// pink</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <blockquote>
+                <p>Challenge:</p>
+                <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>// Our **colors** array should currently be: ['red', 'orange', 'yellow', 'green', 'blue', 'purple'].
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>// Assume you *don't* know the index position of **green**.
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>// Using a combination of the *methods* we've learned, remove colors green and blue, an in their place, put indigo.
+</div></div></div></pre>
+            </blockquote>
+            <blockquote>
+                <p>Solution:</p>
+                <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>var challenge = colors.splice(colors.indexOf('green'), 2, 'indigo');
+</div></div></div></pre>
+            </blockquote>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.slice()</h1>
+            <p>Slice is non-destructive; it does not alter the original array. Elements of the original array are copied into the returned array.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Copying the entirety of an array</h4>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">newColors</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">colors</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">slice</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">colors</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// ['red', 'orange', 'yellow', 'indigo', 'purple']</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">newColors</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// ['red', 'orange', 'yellow', 'indigo', 'purple']</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Returning a portion of the original array.</h4>
+            <p>When slicing a portion of an array, note that the second argument is zero-based. It adds up to, but not including the index position.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">newColorsPortion</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">colors</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">slice</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">1</span><span class="ace_punctuation ace_operator">,</span>                        <span class="ace_constant ace_numeric">3</span>
+                        <span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">colors</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// ['red', 'orange', 'yellow', 'indigo', 'purple']</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">newColorsPortion</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// [orange', 'yellow']</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.reverse()</h1>
+            <p>This method reverses an array in place. The first array element becomes the last, and the last array element becomes the first.</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">a</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_paren ace_lparen">[</span>
+                        <span class="ace_string">'one'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'two'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'three'</span><span class="ace_paren ace_rparen">]</span>
+                        <span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">reversed</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">a</span>
+                        <span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">reverse</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">a</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// ['three', 'two', 'one']</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">reversed</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// ['three', 'two', 'one']</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.sort()</h1>
+            <p>The method sorts the elements of an array in place and returns the array. The default sort order is according to string Unicode code points.</p>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Default sorting</h4>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">points</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_paren ace_lparen">[</span>
+                        <span class="ace_constant ace_numeric">1</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">10</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">21</span>
+                        <span
+                            class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">2</span><span class="ace_paren ace_rparen">]</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">points</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">sort</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">points</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// [1, 10, 2, 21]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">words</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_paren ace_lparen">[</span>
+                        <span class="ace_string">'word'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'Word'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">'1 Word'</span><span class="ace_punctuation ace_operator">,</span>                        <span class="ace_string">'2 Words'</span><span class="ace_paren ace_rparen">]</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">words</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">sort</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_identifier">words</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">words</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// ['1 Word', '2 Words', 'Words', 'words']</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <blockquote>
+                <p>Tip: In Unicode, numbers come before uppercase letters, which come before lowercase letters. Default sorting <em>typically</em> provides adequate results for alphanumeric sorting.</p>
+            </blockquote>
+        </div>
+        <div class="cell markdown-cell">
+            <h4>Comparison sorting</h4>
+            <p>If a comparison function is supplied, the array elements are sorted according to the return value of the compare function. For a simple ascending numerical sort,</p>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span> <span class="ace_identifier">points</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_paren ace_lparen">[</span>
+                        <span class="ace_constant ace_numeric">4</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">2</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">5</span>
+                        <span
+                            class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">1</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">3</span><span class="ace_paren ace_rparen">]</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">points</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function">sort</span><span class="ace_paren ace_lparen">(</span>
+                        <span class="ace_storage ace_type">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">a</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">b</span><span class="ace_paren ace_rparen">)</span>
+                        <span class="ace_paren ace_lparen">{</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span> <span class="ace_keyword">return</span> <span class="ace_identifier">a</span> <span class="ace_keyword ace_operator">-</span> <span class="ace_identifier">b</span>
+                        <span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">})</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span>
+                        <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">points</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+                    </div>
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment">// 1, 2, 3, 4, 5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell markdown-cell">
+            <blockquote>
+                <p>Tip: Comparison sorting <em>typically</em> provides adequate results for numeric sorting.</p>
+            </blockquote>
+        </div>
+        <div class="cell markdown-cell">
+            <blockquote>
+                <p>Here is the breakdown of the calculation:</p>
+                <p><strong>2</strong>, <strong>4</strong>, 5, 1, 3 —— 2 is less than 4, move to the next two.<br> 2, <strong>4</strong>, <strong>5</strong>, 1, 3 —— 4 is less than 5, move to the next two.<br> 2, 4, <strong>5</strong>, <strong>1</strong>,
+                    3 —— 5 is greater than 1... flip the numbers and work backward.<br> 2, <strong>4</strong>, <strong>1</strong>, 5, 3 —— 4 is greater than 1... flip the numbers and work backward.<br>
+                    <strong>2</strong>, <strong>1</strong>, 4, 5, 3 —— 2 is greater than 1... flip the numbers. Continue from the index that began the direction shift.<br> 1, 2, 4, <strong>5</strong>, <strong>3</strong> —— 5 is greater than 3... flip
+                    the numbers and work backward.<br> 1, 2, <strong>4</strong>, <strong>3</strong>, 5 —— 4 is greater than 3... flip the numbers and work backward.<br> 1, <strong>2</strong>, <strong>3</strong>, 4, 5 —— 2 is less than 3... sorting complete.</p>
+            </blockquote>
+        </div>
+        <div class="cell markdown-cell">
+            <hr>
+            <h1>.map()</h1>
+        </div>
+        <div class="cell code-cell">
+            <div class="ace-monokai">
+                <div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0">
+                    <div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">var</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.keyCode === 39) window.location.href = 'Loops.html';
+            if (e.keyCode === 37) window.location.href = 'Day02 Assignment.html';
+        }
+    </script>
+</body>
+
+</html>
