@@ -301,3 +301,33 @@ border-top:1px solid #ccc;
 table tr:nth-child(even) {
 background:#f8f8f8;
 }
+
+/* custom classes */
+
+body#index {
+	background: #eeeeee url("../img/homepage-background.jpg") no-repeat fixed center;
+	font-family:'Roboto',sans-serif;
+	padding: 30px 0 60px 0;
+}
+
+h1.main-title {
+	background: #8f0000;
+	color: #fff;
+	width: 100%;
+	padding: 30px;
+	font-weight: 100;
+}
+
+div.card {
+	padding-bottom: 10px;
+}
+
+h4.card-title {
+	margin-top: 8px;
+	margin-bottom: 2px;
+	text-align: center;
+}
+
+ul.day-agenda {
+	list-style: none;
+}
