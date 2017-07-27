@@ -320,6 +320,10 @@ h1.main-title {
 
 div.card {
 	padding-bottom: 10px;
+	border: none;
+	border-radius: 0;
+	background: #fff;
+	opacity: .95;
 }
 
 h4.card-title {
@@ -330,4 +334,9 @@ h4.card-title {
 
 ul.day-agenda {
 	list-style: none;
+}
+
+li.list-group-item {
+	font-weight: 300;
+	font-size: 18px;
 }
