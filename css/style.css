@@ -311,32 +311,52 @@ body#index {
 }
 
 h1.main-title {
-	background: #8f0000;
+	background: #8f0000 url("../img/bg-learn-from-pros.jpg") no-repeat center center;
+	background-size: cover;
 	color: #fff;
 	width: 100%;
 	padding: 30px;
-	font-weight: 100;
+	font-weight: 700;
 }
 
 div.card {
 	padding-bottom: 10px;
+	margin-bottom: 40px;
 	border: none;
 	border-radius: 0;
 	background: #fff;
-	opacity: .95;
+	opacity: .92;
+}
+
+div.card-block {
+	background: #c9000b;
+	color: #fff;
 }
 
 h4.card-title {
 	margin-top: 8px;
 	margin-bottom: 2px;
 	text-align: center;
+	font-weight: 500;
 }
 
 ul.day-agenda {
 	list-style: none;
 }
 
+ul.day-agenda li:first-child {
+	font-weight: 700;
+}
+
 li.list-group-item {
 	font-weight: 300;
 	font-size: 18px;
+}
+
+@media screen and (max-width: 576px) {
+	ul.day-agenda {
+		padding-left: 0;
+		margin: 0 auto;
+		text-align: center;
+	}
 }
